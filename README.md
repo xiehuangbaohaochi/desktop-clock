@@ -7,6 +7,8 @@
 
 <sub>黑色部分是透明区域，实际会直接叠在壁纸上。</sub>
 
+![走秒演示](demo.gif)
+
 ---
 
 ## 特性
@@ -23,6 +25,8 @@
 - **单实例**：重复启动不会开出第二个时钟；不出现在任务栏和 Alt+Tab。
 
 ## 快速开始
+
+> 不想折腾源码？直接下载 [Releases](https://github.com/xiehuangbaohaochi/desktop-clock/releases) 里的 `DesktopClock-v1.0.0.zip`，解压后双击 `启动时钟.bat` 即可。
 
 1. 下载本仓库（`Code → Download ZIP` 或 `git clone`）。
 2. 双击 **`启动时钟.bat`** 即可运行。
