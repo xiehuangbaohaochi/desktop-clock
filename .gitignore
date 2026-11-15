@@ -1,0 +1,11 @@
+# 本地设置与运行产物，不入库
+clock-settings.json
+weather-cache.json
+clock.log
+*.lnk
+
+# Windows / 编辑器
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
