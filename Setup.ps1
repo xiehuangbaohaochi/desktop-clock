@@ -1,4 +1,4 @@
-# 一键准备：生成本地快捷方式（可选：开机自启）
+﻿# 一键准备：生成本地快捷方式（可选：开机自启）
 # 用法：  powershell -NoProfile -ExecutionPolicy Bypass -File .\Setup.ps1
 #         powershell -NoProfile -ExecutionPolicy Bypass -File .\Setup.ps1 -Autostart
 
@@ -11,13 +11,13 @@ $ErrorActionPreference = 'Stop'
 $dir = $PSScriptRoot
 
 $psExe = Join-Path $env:SystemRoot 'System32\WindowsPowerShell\v1.0\powershell.exe'
-$args  = '-NoProfile -STA -ExecutionPolicy Bypass -WindowStyle Hidden -File "' + (Join-Path $dir 'DesktopClock.ps1') + '"'
+$argLine = '-NoProfile -STA -ExecutionPolicy Bypass -WindowStyle Hidden -File "' + (Join-Path $dir 'DesktopClock.ps1') + '"'
 
 function New-ClockShortcut([string]$Path) {
     $shell = New-Object -ComObject WScript.Shell
     $lnk = $shell.CreateShortcut($Path)
     $lnk.TargetPath       = $psExe
-    $lnk.Arguments        = $args
+    $lnk.Arguments        = $argLine
     $lnk.WorkingDirectory = $dir
     $lnk.WindowStyle      = 7
     $lnk.Description      = '此刻 · 桌面时钟'
