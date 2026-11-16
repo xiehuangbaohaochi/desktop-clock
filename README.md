@@ -7,6 +7,8 @@
 
 <sub>黑色部分是透明区域，实际会直接叠在壁纸上。</sub>
 
+> 同系列：[此刻 · 待办清单](https://github.com/xiehuangbaohaochi/desktop-todo) —— 同一套视觉语言的透明桌面待办。
+
 ![走秒演示](demo.gif)
 
 ---
